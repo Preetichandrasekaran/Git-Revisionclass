@@ -6,13 +6,10 @@ import org.openqa.selenium.WebDriver;
 
 import io.cucumber.core.api.Scenario;
 import io.cucumber.java.After;
+import io.cucumber.java.Before;
 
 public class Hooks  {
 
-//@Before
-//public void launchBrowser() {
-	
-//}
 WebDriver driver;
 @After
 public void ss(Scenario s) {
@@ -24,6 +21,10 @@ public void ss(Scenario s) {
 		s.embed(snap, "image/png");
 	}
 }
+
+@Before
+public void testcase() {
+	System.out.println("TestCase:1");
 }
 
-
+}
