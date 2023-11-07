@@ -24,6 +24,11 @@ public void ss(Scenario s) {
 		s.embed(snap, "image/png");
 	}
 }
+
+private void tc() {
+	System.out.println("Tc");
+
+}
 }
 
 
